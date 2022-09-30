@@ -32,19 +32,19 @@ Follow the steps below to create partners: IBM Sterling File Gateway: Creating a
 
 3) Hover over Add -> Topic (Users) -> Thread Group "Thread Group"
 
-Number of Threads (Users) = 5
-Ramp-up Period (seconds) = 1
-LoopCount = 5
+* Number of Threads (Users) = 5
+* Ramp-up Period (seconds) = 1
+* LoopCount = 5
 
 4) Add a Sample > FTP and specify connection settings:
 
-* host
-* port
-* username
-* password (unencrypted)
+* Server Name
+* Port Number
+* Username
+* Password (unencrypted)
 * FTP command to be executed (such as get or put)
-* source file, 
-* an output file
+* Remote File
+* Local File
 
 5) Optional: Create other Samples by changing FTP
 
@@ -61,30 +61,32 @@ LoopCount = 5
 
 ### Prerequisites
 
-Download the Plugins Manager JAR file ( https://jmeter-plugins.org/get/ ) and place it in JMeter's lib/ext directory.
+1) Download the Plugins Manager JAR file ( https://jmeter-plugins.org/get/ ) and place it in JMeter's **lib/ext** directory.
 
-Then start JMeter and go to the "Options" menu to access the Plugin Manager .
+2) Then start JMeter and go to the **Options** menu to access the Plugin Manager .
 
-Under available plugins, search for SSH , install the plugin.
-
+3) Under available plugins, search for **SSH** , install the plugin.
 
 
 ### Creating the Test Plan
 1) Create a new test plan "Test Plan"
 
 Name: SB2Bi SFTP Test Plan
+
 2) Select the 'Test Plan' node and right click on it.
 
 3) Hover over Add -> Topic (Users) -> Thread Group "Thread Group"
 
 4) Add a Sample > SSH SFTP and specify connection settings:
 
-the host to connect to,
-door,
-username and
-password (unencrypted)
-SFTP command to run (such as get or put)
-a downloadable source file, an output file
+* Hostname
+* Port
+* User Name
+* Password
+* Action
+* Source path
+* Target path
+
 5) Optional: Create other Samples using SFTP
 
 6) Add to Listener > View Results Tree
