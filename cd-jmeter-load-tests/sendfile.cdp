@@ -1,0 +1,13 @@
+SENDFILE PROCESS
+    SNODE=&snode
+STEP01 COPY
+  FROM (
+          FILE=&srcFile
+          pnode
+       )
+  TO   (
+          FILE=&destFile
+          snode
+          DISP=RPL
+       )
+PEND
