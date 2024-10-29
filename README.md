@@ -15,6 +15,5 @@ increase the Java Heap to meet your testing requirements Best Practices with JMe
 
 * [Run FTP Load Test on Sterling B2B Integrator](sb2bi-ftp-readme.md)
 * [Run SFTP Load Test on Sterling B2B Integrator](sb2bi-ftp-readme.md)
-
 * [Run Load Test on IBM Sterling Connect:Direct](cd-readme.md)
-
+* [Run Load Test on IBM Sterling MyFG 2.0](sb2bi-myfg20-readme.md)
